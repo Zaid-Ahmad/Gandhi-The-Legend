@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 1.5s;
+    overflow-x: hidden;
+}
+
+.animate {
+    opacity: 0;
+    transition: 2s;
+    transform: translateX(100%);
+}
+
+.para_animate {
+    opacity: 0;
+    transition: 2s;
+}
+
+.para_fade {
+    opacity: 1;
+}
+
+.animation {
+    opacity: 0;
+    transition: 2s;
+    margin-left: 230px;
+}
+
+.letter_animation {
+    opacity: 0;
+    transition: 2s;
+}
+
+.letter_fading {
+    opacity: 1;
+}
+
+.fading {
+    opacity: 1;
+}
+
+.fade {
+    opacity: 1;
+    transform: rotate(0);
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar h2 {
+    flex: 5;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    animation-name: text;
+}
+
+.navbar h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links ul{
+    list-style-type: none;
+    display: flex;
+    flex: 4;
+}
+
+.nav-links ul li a{
+    padding: 20px;
+    text-decoration: none;
+    font-family: Arial;
+    color: #333;
+}
+
+.image {
+    height: auto;
+    width: 500px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 100px;
+    animation-name: img;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+.about {
+    overflow-x: hidden;
+}
+
+@keyframes img {
+    from {
+        margin-right: -50px;
+    }
+    to {
+        margin-right: 50px;
+    }
+
+}
+
+.about .description .ml3 {
+    position: absolute;
+    font-size: 36px;
+    font-weight: normal;
+    font-family: 'Ubuntu', sans-serif;
+    top: 150px;
+    left: 150px;
+}
+
+.about .description h4 {
+    position: absolute;
+    top: 185px;
+    left: 150px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+} 
+
+.about .description .para1 {
+    position: absolute;
+    top: 220px;
+    left: 150px;
+    width: 500px;
+    font-size: 17px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.about .description .para2 {
+    position: absolute;
+    top: 375px;
+    left: 150px;
+    width: 500px;
+    font-size: 17px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.values {
+    position: absolute;
+    top: 650px;
+    background-color: #fff;
+    width: 100%;
+    height: 800px;
+    margin-bottom: 1000px;
+    overflow: hidden;
+}
+
+.values h2 {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 100px;
+    margin-bottom: -10px;
+}
+
+.border1 {
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 43%;
+    margin-top: 70px;
+}
+
+.border2 {
+    position: absolute;
+    margin-left: 723px;
+    margin-top: 70px;
+    background-color: white;
+    height: 2px;
+    width: 43.3%;
+}
+
+.cards {
+    margin-top: 50px;
+    display: flex;
+}
+
+.card1, .card2, .card3, .card4, .card5 {
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #191919; 
+    color: #fbfbfb;
+    height: 200px;
+    padding: 15px;
+}
+
+.card-layout {
+    display: flex;
+    flex-basis: 66%;
+    margin-left: calc(33.3%/2);
+    margin-right: calc(33.3%/2);
+}
+.card1 p, .card2 p, .card3 p, .card4 p, .card5 p {
+    margin-top: 10px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.cards h3 {
+    font-family: arial;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.card4 h3, .card5 h3 {
+    font-family: arial;
+    font-weight: lighter;
+}
+
+.values h4 {
+    font-family: arial;
+    width: 800px;
+    margin-left: 300px;
+    margin-top: 100px;
+    font-weight: lighter;
+    color: black;
+}
+
+.bdr3, .bdr4 {
+    height: 2px;
+    background-color: black;
+    animation-name: borders;
+    animation-duration: 2s;
+    animation-iteration-count: 1; 
+    animation-timing-function: ease;
+}
+
+.bdr3 {
+    position: absolute;
+    top: 700px;
+    left: 0px;
+    width: 100%;
+}
+
+.bdr4 {
+    left: 0px;
+    position: absolute;
+    top: 804px;
+    width: 100%;
+}
+
+@keyframes borders {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.modern {
+    position: absolute;
+    top: 1350px;
+}
+
+.modern h2 {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 500px;
+    font-size: 35px;
+    margin-top: 100px;
+}
+
+.text {
+    text-align: center;
+}
+
+.modern .text p {
+    text-align: left;
+    font-family: serif;
+    width: 1000px;  
+    margin-top: 50px;
+    margin-left: -20px;
+}
+
+.img2 img {
+    margin-top: 50px;
+    margin-left: 134px;
+    height: auto;
+    width: 300px;
+}
+
+.img3 img{
+    margin-top: -305px;
+    margin-left: 710px;
+    border-radius: 5px;
+    height: auto;
+    width: 300px;
+}
+
+.img4 img{ 
+    border-radius: 5px;
+    height: auto;
+    width: 300px;
+    margin-left: 134px;
+    margin-top: -15px;
+}
+
+.img5 img{
+    position: absolute;
+    border-radius: 5px;
+    left: 741px;
+    top: 750px;
+    height: 300px;
+    width: auto;
+}
+
+.text .para3 p, .text .para4 p, .text .para5 p  {
+    font-family: 'Roboto', sans-serif;
+}
+
+.para4, .para5 {
+    margin-top: -35px;
+}
+
+.row {
+  position: absolute;
+  left: 100px;
+  display: flex;
+  overflow-x: hidden;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 35%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 30px;
+  margin-left: 150px;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.conclusion {
+    margin-top: 1600px;
+}
+
+.conclusion h2 {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    left: 600px;
+    top: 2300px;
+    color: black;
+    padding: 20px;
+    font-size: 35px;
+    margin-top: 100px;
+}
+
+.fcards {
+    position: absolute;
+    display: flex;
+    top: 2500px;
+    left: 180px;
+}
+
+.fcard1, .fcard2 {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #898b8f;
+}
+
+.fcard1 h3, .fcard2 h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.fcard1 {
+    width: 500px;
+    height: 300px;
+}
+
+.fcard2 {
+    width: 500px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.content1 p, .content2 p {
+    font-family: 'arial';
+    width: 400px;
+    margin-left: 20px;  
+    color: white;  
+}
+
+.content1 .text_wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.content2 .text_wrapper2 {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+footer {
+    position: absolute;
+    background-color: #333;
+    top: 2940px;
+    width: 100%;
+    height: 300px;
+    margin-bottom: -10px;
+}
+
+footer h5 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+footer a {
+    position: absolute;
+    color: #eeeeee;
+    font-family: arial; 
+    opacity: .5;
+    top: 100px;
+    left: 100px;
+}
+
+footer p {
+    position: absolute;
+    color: #eeeeee;
+    font-family: arial; 
+    opacity: .5;
+    top: 150px;
+    left: 100px;
+}
+
+footer h6 {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 18px;
+    opacity: .7;
+    margin-left: 540px;
+    margin-top: -40px;
+}
+
+.icon img {
+    height: auto;
+    width: 50px;
+    margin-top: 85px;
+    margin-left: 480px;
+}
+
+footer a:hover {
+    opacity: 1;
+}
+
+.canvas {
+    position: absolute;
+    height: 62px;
+    background-color: red;
+    z-index: 0;
+    width: 201px;
+    margin-left: 1090px;
+    margin-top: -112px;
+}
+
+footer .img img {
+    height: auto;
+    width: 150px;
+    border-radius: 10px;
+    margin-left: 930px;
+    margin-top: -95px;
+}
+
+.img h6 {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 1097px; 
+    margin-top: -160px;
+    font-size: 50px;
+    line-height: 1;
+}
+
+.img img:hover {
+    transition: .2s;
+    border: 5px solid #eeeeee;
+}
+
+.img img:not(-hover) {
+    transition: .5s;
+}
+
+

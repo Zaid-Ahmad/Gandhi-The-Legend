@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #333;
+}
+
+.about {
+	width: 1000px;
+	margin-left: 150px;
+}
+
+.about h2 {
+	color: #eeeeee;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	padding: 50px;
+}
+
+.about p {
+	font-family: 'Dosis', sans-serif;
+	color: white;
+	font-size: 20px;
+}
+
+.highlight {
+	background-color: #f75940;
+	width: 360px;
+	padding: 10px;
+	border-radius: 5px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 30px;
+	margin-left: 355px;
+	margin-top: 50px;
+}
+
+.highlight h3 {
+	font-weight: lighter;
+}
