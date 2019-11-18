@@ -41,3 +41,20 @@ body {
 .highlight h3 {
 	font-weight: lighter;
 }
+
+@media screen and (max-width: 800px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.highlight {
+		width: 340px;
+		position: absolute;
+		left: -165px;
+		text-align: center;
+	}
+
+	.about {
+		max-width: 500px;
+	}
+}

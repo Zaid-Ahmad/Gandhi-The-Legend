@@ -15,7 +15,7 @@ body {
 .animate {
     opacity: 0;
     transition: 2s;
-    transform: translateX(100%);
+    transform: translateX(70%);
 }
 
 .para_animate {
@@ -57,9 +57,9 @@ body {
     height: 80px;
     justify-content: center;
     align-items: center;
-    background-color: #eeeeee;
+    background-color: #C5CAE9;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 .navbar h2 {
@@ -88,17 +88,20 @@ body {
     color: #333;
 }
 
-.image {
+.image img {
+    max-width: 400px;
     height: auto;
     width: 500px;
     float: right;
     margin-right: 50px;
-    margin-top: 100px;
+    margin-top: 180px;
     animation-name: img;
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
 }
+
+
 
 .about {
     overflow-x: hidden;
@@ -154,7 +157,7 @@ body {
 .values {
     position: absolute;
     top: 650px;
-    background-color: #fff;
+    background-color: transparent;
     width: 100%;
     height: 800px;
     margin-bottom: 1000px;
@@ -195,7 +198,7 @@ body {
 .card1, .card2, .card3, .card4, .card5 {
     margin: 20px;
     border-radius: 5px;
-    background-color: #191919; 
+    background-image: linear-gradient(#7986CB,#9FA8DA); 
     color: #fbfbfb;
     height: 200px;
     padding: 15px;
@@ -274,9 +277,10 @@ body {
 
 .modern h2 {
     font-family: 'Roboto', sans-serif;
-    margin-left: 500px;
+    margin-left: 550px;
     font-size: 35px;
     margin-top: 100px;
+    max-width: 600px;
 }
 
 .text {
@@ -355,18 +359,120 @@ body {
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
+    .image {
+        position: absolute;
+        top: 480px;
+        left: 200px;
+    }
 
+    .about .description .ml3, .about .description .ml6, .about .description .para1, .about .description .para2{
+        margin-left: -20px;
+    }
+
+    .values {
+        margin-top: 400px;
+    } 
+
+    .modern {
+        margin-top: 300px;
+        margin-left: -300px;
+    }
+
+    .modern .text .para3 p, .modern .text .para4 p, .modern .text .para5 p{
+        width: 600px;
+        margin-left: 150px;
+    } 
+
+    .row {
+        z-index: 1; 
+    }
+
+    .column {
+        max-width: 30%;
+        margin-left: 100px;
+        z-index: 0;
+    }
+
+    .column img {
+        max-width: 200px;
+    }
+
+    .conclusion h2{
+        margin-top: 150px;
+        margin-left: -320px;
+    }
+
+    .fcards {
+        margin-top: 130px; 
+        margin-left: -150px;
+    }
+
+    .fcard1, .fcard2 {
+        max-width: 300px; 
+        overflow-x: hidden;
+    }
+
+    .content1 p, .content2 p {
+        position: absolute;
+        max-width: 250px;
+        left: -10px;
+        top: 20px;
+    }
+
+    footer {
+        margin-top: 100px;
+    }
+
+    footer a {
+        margin-left: -74px;
+    }
+
+    footer p {
+        margin-left: -74px;
+        margin-top: 57px;
+    }
+
+
+    .icon img {
+        position: absolute;
+        left: -83px;
+        top: 106px;
+        max-width: 100px;
+    }
+
+    .icon h6 {
+        position: absolute;
+        left: -82px;
+        top: 246px;
+    }
+
+    .img img {
+        display: none;
+    }
+
+}
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .image {
+        position: absolute;
+        top: 550px;
+        left: 80px;
+    }  
+
+    .about .description .ml3, .about .description .ml6, .about .description .para1, .about .description .para2{
+        margin-left: -105px;
+        max-width: 700px;
+    }
+
+    .card1, .card2, .card3, .card4, .card5 {
+        overflow-y: scroll;
+    }
+
 }
 
 .conclusion {
@@ -377,11 +483,10 @@ body {
     position: absolute;
     font-family: 'Roboto', sans-serif;
     left: 600px;
-    top: 2300px;
+    top: 2400px;
     color: black;
     padding: 20px;
     font-size: 35px;
-    margin-top: 100px;
 }
 
 .fcards {
@@ -395,7 +500,7 @@ body {
     margin: 20px;
     padding: 15px;
     border-radius: 5px;
-    background-color: #898b8f;
+    background-color: #8C9EFF;
 }
 
 .fcard1 h3, .fcard2 h3 {
@@ -421,7 +526,8 @@ body {
     font-family: 'arial';
     width: 400px;
     margin-left: 20px;  
-    color: white;  
+    color: white;
+    margin-top: 20px;  
 }
 
 .content1 .text_wrapper {
@@ -443,18 +549,17 @@ body {
 footer {
     position: absolute;
     background-color: #333;
-    top: 2940px;
+    top: 3000px;
     width: 100%;
-    height: 300px;
-    margin-bottom: -10px;
 }
 
+
 footer h5 {
-    font-family: 'Ubuntu', sans-serif;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 90px;
+    margin-bottom: 20px;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 footer a {
@@ -476,47 +581,49 @@ footer p {
 }
 
 footer h6 {
+    position: absolute;
     font-family: 'Ubuntu', sans-serif;
     color: white;
     font-size: 18px;
     opacity: .7;
-    margin-left: 540px;
-    margin-top: -40px;
+    left: 161px;
+    top: 204px;
 }
 
 .icon img {
     height: auto;
     width: 50px;
-    margin-top: 85px;
-    margin-left: 480px;
+    margin-top: 190px;
+    margin-left: 98px;
 }
 
 footer a:hover {
     opacity: 1;
 }
 
-.canvas {
+.highlight {
     position: absolute;
     height: 62px;
     background-color: red;
     z-index: 0;
     width: 201px;
-    margin-left: 1090px;
-    margin-top: -112px;
+    margin-left: 1081px;
+    margin-top: -62px;
 }
 
 footer .img img {
+    position: absolute;
     height: auto;
     width: 150px;
     border-radius: 10px;
-    margin-left: 930px;
-    margin-top: -95px;
+    left: 920px;
+    top: 81px;
 }
 
 .img h6 {
     font-family: 'Poppins', sans-serif;
-    margin-left: 1097px; 
-    margin-top: -160px;
+    margin-left: 928px; 
+    margin-top: -71px;
     font-size: 50px;
     line-height: 1;
 }
@@ -529,5 +636,3 @@ footer .img img {
 .img img:not(-hover) {
     transition: .5s;
 }
-
-
